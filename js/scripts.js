@@ -1,5 +1,6 @@
-$(document).ready(funtion(){
-  $('form').submit(function(event){
+$(document).ready(function() {
+  alert.('test');
+  $('form').submit(function(event) {
     event.preventDefault();
 
     var season = $('input:radio[name=season]:checked').val();
@@ -9,24 +10,41 @@ $(document).ready(funtion(){
     var batteries = $('input:radio[name=batteries]:checked').val();
 
     let input = 0;
+    alert.('test');
 
       if (season === '1'){
         input++;
+        alert.('test');
+
       }
       if (starwars === '1'){
         input++;
+        alert.('test');
+
       }
       if (physics === '1') {
         input++;
+        alert.('test');
+
       }
       if (cereal === '1') {
         input++;
+        alert.('test');
+
       }
       if (batteries ==='1') {
         input++;
-      }
-      if (input >= 3) {
+        alert.('test');
 
       }
+      if (input >= 3) {
+        input = "Python";
+        alert.('test');
+
+      }
+
+      $(".result").empty().text(input);
+      $("#message").show();
+
   });
 });
