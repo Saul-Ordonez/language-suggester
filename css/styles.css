@@ -2,11 +2,21 @@
   display: none;
 }
 
-.error {
+.well#error {
   display: none;
+  text-align: center;
+}
+
+.btn-info {
+  background-color: #303030;
+  border-color: #303030;
 }
 
 
 .well#message {
   text-align: center;
+}
+
+body {
+  background-color: #b2fc92;
 }

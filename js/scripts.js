@@ -91,7 +91,7 @@ $(document).ready(function() {
       }
 
       else {
-        $('.error').show();
+        $('#error').show();
       }
 
 
