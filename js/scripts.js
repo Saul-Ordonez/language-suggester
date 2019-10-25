@@ -25,5 +25,8 @@ $(document).ready(funtion(){
       if (batteries ==='1') {
         input++;
       }
+      if (input >= 3) {
+
+      }
   });
 });
