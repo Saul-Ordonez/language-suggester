@@ -8,82 +8,88 @@ $(document).ready(function() {
     var cereal = $('input:radio[name=cereal]:checked').val();
     var batteries = $('input:radio[name=batteries]:checked').val();
 
-    let input = 0;
+    let inputJavascript = 0;
+    let inputPython = 0;
+    let inputRuby = 0;
 
       if (season === 'Javascript') {
-        input++;
+        inputJavascript++;
       }
 
       if (season === 'Python') {
-        input += 2;
+        inputPython++;
       }
 
       if (season === 'Ruby') {
-        input += 3;
+        inputRuby++;
       }
 
       if (starwars === 'Javascript') {
-        input++;
+        inputJavascript++;
       }
 
       if (starwars === 'Python') {
-        input += 2;
+        inputPython++;
       }
 
       if (starwars === 'Ruby') {
-        input += 3;
+        inputRuby++;
       }
 
       if (physics === 'Javascript') {
-        input++;
+        inputJavascript++;
       }
 
       if (physics === 'Python') {
-        input += 2;
+        inputPython++;
       }
 
       if (physics === 'Ruby') {
-        input += 3;
+        inputRuby++;
       }
 
       if (cereal === 'Javascript') {
-        input++;
+        inputJavascript++;
       }
 
       if (cereal === 'Python') {
-        input += 2;
+        inputPython++;
       }
 
       if (cereal === 'Ruby') {
-        input += 3;
+        inputRuby++;
       }
 
       if (batteries === 'Javascript') {
-        input++;
+        inputJavascript++;
       }
 
       if (batteries === 'Python') {
-        input += 2;
+        inputPython++;
       }
 
       if (batteries === 'Ruby') {
-        input += 3;
+        inputRuby++;
       }
 
-      if (input < 9) {
-        input = 'Javascript';
+      if (inputJavascript === 3 || inputJavascript === 4 || inputJavascript === 5) {
+        inputJavascript = 'Javascript';
+        $(".result").empty().append(inputJavascript);
+        $("#message").show();
       }
 
-      if (input >= 9 && input < 12) {
-        input = 'Python';
+      else if (inputPython === 3 || inputPython === 4 || inputPython === 5) {
+        inputPython = 'Python';
+        $(".result").empty().append(inputPython);
+        $("#message").show();
       }
 
-      else {
-        input = 'Ruby';
+      else if (inputRuby === 3 || inputRuby === 4 || inputRuby === 5) {
+        inputRuby = 'Ruby';
+        $(".result").empty().append(inputRuby);
+        $("#message").show();
       }
 
-      $(".result").empty().append(input);
-      $("#message").show();
 
   });
 });
