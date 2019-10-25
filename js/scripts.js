@@ -70,11 +70,11 @@ $(document).ready(function() {
         input +=3;
       }
 
-      if (input < 8) {
+      if (input <= 5) {
         input = 'Javascript';
       }
 
-      if (input >= 8 && input <= 15 )  {
+      if (input < 12) {
         input = 'Python';
       }
 
