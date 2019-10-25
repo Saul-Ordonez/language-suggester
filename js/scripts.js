@@ -10,32 +10,79 @@ $(document).ready(function() {
 
     let input = 0;
 
-      if (season === 'Javascript'){
+      if (season === 'Javascript') {
         input++;
-
       }
-      if (starwars === 'Javascript'){
+
+      if (season === 'Python') {
+        input += 2;
+      }
+
+      if (season === 'Ruby') {
+        input +=3;
+      }
+
+      if (starwars === 'Javascript') {
         input++;
-
       }
+
+      if (starwars === 'Python') {
+        input += 2;
+      }
+
+      if (starwars === 'Ruby') {
+        input +=3;
+      }
+
       if (physics === 'Javascript') {
         input++;
-
       }
+
+      if (physics === 'Python') {
+        input += 2;
+      }
+
+      if (physics === 'Ruby') {
+        input +=3;
+      }
+
       if (cereal === 'Javascript') {
         input++;
-
       }
-      if (batteries ==='Javascript') {
+
+      if (cereal === 'Python') {
+        input += 2;
+      }
+
+      if (cereal === 'Ruby') {
+        input +=3;
+      }
+
+      if (batteries === 'Javascript') {
         input++;
-
-      }
-      if (input >= 3) {
-        input = "Python";
-
       }
 
-      $(".result").empty().text(input);
+      if (batteries === 'Python') {
+        input += 2;
+      }
+
+      if (batteries === 'Ruby') {
+        input +=3;
+      }
+
+      if (input < 8) {
+        input = 'Javascript';
+      }
+
+      if (input >= 8 && input <= 15 ) {
+        input = 'Python';
+      }
+
+      else {
+        input = 'Ruby';
+      }
+
+      $(".result").empty().append(input);
       $("#message").show();
 
   });
