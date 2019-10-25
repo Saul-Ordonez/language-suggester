@@ -19,7 +19,7 @@ $(document).ready(function() {
       }
 
       if (season === 'Ruby') {
-        input +=3;
+        input += 3;
       }
 
       if (starwars === 'Javascript') {
@@ -31,7 +31,7 @@ $(document).ready(function() {
       }
 
       if (starwars === 'Ruby') {
-        input +=3;
+        input += 3;
       }
 
       if (physics === 'Javascript') {
@@ -43,7 +43,7 @@ $(document).ready(function() {
       }
 
       if (physics === 'Ruby') {
-        input +=3;
+        input += 3;
       }
 
       if (cereal === 'Javascript') {
@@ -55,7 +55,7 @@ $(document).ready(function() {
       }
 
       if (cereal === 'Ruby') {
-        input +=3;
+        input += 3;
       }
 
       if (batteries === 'Javascript') {
@@ -67,14 +67,14 @@ $(document).ready(function() {
       }
 
       if (batteries === 'Ruby') {
-        input +=3;
+        input += 3;
       }
 
-      if (input <= 5) {
+      if (input < 9) {
         input = 'Javascript';
       }
 
-      if (input < 12) {
+      if (input >= 9 && input < 12) {
         input = 'Python';
       }
 
