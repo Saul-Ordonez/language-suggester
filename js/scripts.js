@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  alert.('test');
   $('form').submit(function(event) {
     event.preventDefault();
 
@@ -10,36 +9,29 @@ $(document).ready(function() {
     var batteries = $('input:radio[name=batteries]:checked').val();
 
     let input = 0;
-    alert.('test');
 
-      if (season === '1'){
+      if (season === 'Javascript'){
         input++;
-        alert.('test');
 
       }
-      if (starwars === '1'){
+      if (starwars === 'Javascript'){
         input++;
-        alert.('test');
 
       }
-      if (physics === '1') {
+      if (physics === 'Javascript') {
         input++;
-        alert.('test');
 
       }
-      if (cereal === '1') {
+      if (cereal === 'Javascript') {
         input++;
-        alert.('test');
 
       }
-      if (batteries ==='1') {
+      if (batteries ==='Javascript') {
         input++;
-        alert.('test');
 
       }
       if (input >= 3) {
         input = "Python";
-        alert.('test');
 
       }
 
