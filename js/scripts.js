@@ -74,7 +74,7 @@ $(document).ready(function() {
         input = 'Javascript';
       }
 
-      if (input >= 8 && input <= 15 ) {
+      if (input >= 8 && input <= 15 )  {
         input = 'Python';
       }
 
