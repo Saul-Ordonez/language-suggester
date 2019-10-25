@@ -2,6 +2,10 @@
   display: none;
 }
 
+.error {
+  display: none;
+}
+
 
 .well#message {
   text-align: center;

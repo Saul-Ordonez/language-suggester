@@ -90,6 +90,10 @@ $(document).ready(function() {
         $("#message").show();
       }
 
+      else {
+        $('.error').show();
+      }
+
 
   });
 });
