@@ -19,4 +19,14 @@
 
 body {
   background-color: #b2fc92;
+  font-family: monospace;
+}
+
+.result {
+  color: #c40000;
+  font-weight: bold;
+}
+
+.padding-options {
+  padding-left: 44px;
 }
