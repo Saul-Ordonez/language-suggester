@@ -76,18 +76,21 @@ $(document).ready(function() {
         inputJavascript = 'Javascript';
         $(".result").empty().append(inputJavascript);
         $("#message").show();
+        $("#error").hide();
       }
 
       else if (inputPython === 3 || inputPython === 4 || inputPython === 5) {
         inputPython = 'Python';
         $(".result").empty().append(inputPython);
         $("#message").show();
+        $("#error").hide();
       }
 
       else if (inputRuby === 3 || inputRuby === 4 || inputRuby === 5) {
         inputRuby = 'Ruby';
         $(".result").empty().append(inputRuby);
         $("#message").show();
+        $("#error").hide();
       }
 
       else {
